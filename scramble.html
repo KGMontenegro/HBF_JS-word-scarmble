@@ -7,8 +7,8 @@
     <h1>A JavaScript Word Scramble Game</h1>
 
     <script>
-        var WORDS     = ["booger", "apple", "hackbright", "mango"];
-        var SCRAMBLED = ["oogreb", "papel", "backrhight", "goman"];
+        var WORDS     = ["booger", "apple", "hackbright", "mango","pineapple"];
+        var SCRAMBLED = ["oogreb", "papel", "backrhight", "goman", "papleneip"];
 
         var playing = true;
         
@@ -28,7 +28,7 @@
 
             // Grab a random word from the WORDS array.
 
-            var idx = getRandomIntInclusive(0,3); 
+            var idx = getRandomIntInclusive(0,WORDS.length); 
             var originalWord = WORDS[idx];
             
             //console.log(originalWord);
